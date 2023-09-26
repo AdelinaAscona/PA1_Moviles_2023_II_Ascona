@@ -75,7 +75,7 @@ public class Movimiento : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy") || other.CompareTag("Trash"))
+        if (other.CompareTag("Enemy") || other.CompareTag("Slime"))
         {
             // Resta 1 a la salud actual cuando colisiona con un objeto "Enemy" o "Trash".
             playerHealth.currentHealth -= 1;
